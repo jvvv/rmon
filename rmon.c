@@ -203,7 +203,7 @@ int main (int argc, char *argv[])
             if (rtype  == (qer->first_event + XCB_RANDR_SCREEN_CHANGE_NOTIFY)) {
                 handle_randr_screen_change(ev);
             }
-            else if (ev->response_type == qer->first_event + XCB_RANDR_NOTIFY)
+            else if (rtype == qer->first_event + XCB_RANDR_NOTIFY)
                 handle_randr_notify(ev);
             free(ev);
         }
