@@ -24,7 +24,7 @@
  */
 
 /* rmon.c -- track randr screen, crtc, output, and propety changes
- * portions based on code randr code for xev
+ * portions based on randr code for xev
  */
 
 #include <stdlib.h>
